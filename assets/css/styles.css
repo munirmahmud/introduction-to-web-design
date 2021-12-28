@@ -1,0 +1,39 @@
+body {
+  background-color: #f1f1f1;
+  font-size: 1.2rem;
+}
+
+.header {
+  background-color: #6c63ff;
+  height: 60px;
+  margin-bottom: 2rem;
+}
+.header .container,
+.header .row {
+  height: 100%;
+}
+.header h3 {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.instructor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+}
