@@ -39,6 +39,19 @@ body {
   color: #fff;
 }
 
+.sec-heading {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+.sec-heading h1 {
+  margin: 0;
+}
+
 code h1,
 code h2,
 code h3,
