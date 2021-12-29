@@ -29,6 +29,7 @@ body {
   background-color: #fff;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 2rem;
 }
 .instructor {
   height: 100%;
@@ -36,4 +37,26 @@ body {
   align-items: center;
   justify-content: flex-end;
   color: #fff;
+}
+
+code h1,
+code h2,
+code h3,
+code h4,
+code h5,
+code h6 {
+  font-size: 100%;
+  display: inline-block;
+}
+ul li {
+  margin-bottom: 1rem;
+}
+ul li br {
+  margin-bottom: 0.5rem;
+}
+ul li p {
+  display: inline-block;
+}
+.ul-example li {
+  margin-bottom: auto;
 }

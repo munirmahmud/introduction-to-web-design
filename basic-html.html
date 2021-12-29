@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Introduction to Web Design & Development - Rexacademy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3><a href="https://munirmahmud.github.io/introduction-to-web-design/">Introduction to Web Design & Development</a></h3>
+          </div>
+          <div class="col-md-6 instructor"><h5>Conducted By: Munir Mahmud</h5></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container content-wrapper">
+      <div class="row">
+        <h2>Basic HTML</h2>
+        <p>
+          We're going to start building our very first website. At first, our website is going to be pretty ugly but it's still going to be functional! We're going to be using the language
+          <abbr title="Hypertext Markup Language">HTML</abbr>. This isn't a programming language since it doesn't actually do anything. It's like how English isn't a programming language either: you
+          can't "run" English. Same idea with <abbr title="Hypertext Markup Language">HTML</abbr>: you can't "run" <abbr title="Hypertext Markup Language">HTML</abbr>.
+          <abbr title="Hypertext Markup Language">HTML</abbr>. is simply the language and pictures on the page. It's the static (which is another word for unchanging) content.
+        </p>
+
+        <h2>Tags</h2>
+        <p>
+          <abbr title="Hypertext Markup Language">HTML</abbr>'s base building block is the tag. A tag is a building block. It describes what's inside it. Every tag has an opening and a closing tag
+          (some tags open and close at the same point.) I think the easiest way to learn it is just to show a bunch of examples.
+        </p>
+        <p>
+          It's bigger and bolder because that's what browsers do with h1s, it makes them look important on the page. However it does more than that too. Browsers aren't the only thing reading
+          websites. Blind and people who can't see well will use screen readers to read web pages out loud to them; it uses things like headers to understand what information is important to read to
+          the users. It's also how Google or Search Engins will understand the important details of your website. In other words, it's important which type of tag you use. More than just the visual
+          aesthetic is using those tags.
+        </p>
+
+        <p>
+          A tag, whether it's opening or closing, are surrounded by angle brackets, < and >. Closing tags always have a slash, /, after the opening angle bracket. There are things called "self-closing
+          tags" or "void tags" that open and close themselves. These will look like this: input tag (I'll explain in a sec what inputs are.) That slash at the end means it is self closing. To make it
+          more confusing, that last slash is optional, so input (with no closing tag ever) is valid too since input tags are always self-closing.
+        </p>
+
+        <p>
+          Tags are also opened and closed in a specific order too. The most recently opened tag must be the next closed tag. For example, if I have an h1 instead of a div, the h1 must be closed first.
+        </p>
+
+        <h2>Types of Tags</h2>
+        <p>So let's explore some of the essential tag types.</p>
+
+        <ul class="px-5">
+          <li>
+            <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code> are headings and called Heading tags. These are the six levels of headings and
+            subheadings you can have. we have HTML which is an <code>h1</code> and then below that we have Types of Tags which is an <code>h2</code>. An <code>h2</code> is a subheading to an
+            <code>h1</code>. An <code>h3</code> is a subheading to a <code>h2</code>. Some schools of thought say each page should only have one <code>h1</code>. Example
+            <code><h1>Document Title</h1></code>
+            .
+          </li>
+          <li>
+            <code>p</code> - Paragraph. You'll put a paragraph of text together inside of a <code>p</code> tag. Only text goes in <code>p</code> tags. Each one of these paragraphs is a
+            <code>p</code> tag. Example:
+            <p>I am a paragraph of text</p>
+            .
+          </li>
+          <li>
+            <code>a</code> – Anchor. An <code>a</code> tag is a link to somewhere else. <a href="#"> This is a link that goes nowhere</a>. Every <code>a</code> tag needs a destination of where the
+            link should take you. We'll talk about that in the attributes section. Example: <a href="https://www.bdtask.com/">Bdtask</a>.
+          </li>
+          <li>
+            <code>div</code> - Short for division. A <code>div</code> is sort of like a cardboard box. It's not really anything by itself; it's more defined by what's in it. It's a generic container
+            tag for grouping together with other things. We'll use a lot of divs. Very useful with CSS. In general, if we want to group together "like" things into a containing tag (like a div) to
+            keep them together. If you have a website with a list of blog posts that each have paragraphs, titles, images, etc. you'll group each post together in a div or other container-type tag
+            typically.
+          </li>
+          <li>
+            <code>span</code> - A container for small pieces of text. If a div is like a cardboard box, a <code>span</code> is like a Ziploc bag. It doesn't change the styling of anything by itself
+            but it allows you to use CSS and JavaScript later to make that text different in some way. Example:
+            <p>Here is some text. <span>This text is in a span</span> but it doesn't look any different.</p>
+          </li>
+          <li>
+            <code>ol</code>, <code>ul</code>, and <code>li</code> - Both <code>ol</code> and <code>ul</code> represent lists. In fact, this list of various tags is a <code>ul</code>! A
+            <code>ul</code> is an unordered list: it's a list of things that could be shuffled and still mean the same thing. If I asked you to list all the teams in a sports league, or all the
+            characters on a TV show, those could be presented in any order. An <code>ol</code> is an organized list: what comes first matters. If I ask you to list out the ten most populous cities in
+            the world, there is an order to that and changing the order makes the list incorrect. In either list, each item in the list is an <code>li</code>.
+          </li>
+          <li>
+            <code>button</code> - A button can be used by JavaScript to respond to a user clicking it, or it can be used by a form to signal a user has completed filling it and it should submit the
+            data. Think of it like a doorbell to your house: you can put the doorbell <code>button</code> there but it's not going to do much unless you connect it to the buzzer. Example:
+            <button>Click me!!</button>
+          </li>
+          <li>
+            <code>img</code> - An image. You use this to load images onto the page. This can be confusing because you can use CSS to bring in images too. The key difference is that when the image is a
+            part of the content, like a diagram that shows data you're talking about or a picture that shows something from the article, it should be an <code>img</code> tag.
+            <br />
+
+            If it's a nice background image or something that's for decoration of your website, use CSS. An <code>img</code> tag needs an src to say where the image is coming from and alt to say what
+            is in the image for screen readers so that the image will still be useful to blind people, people who are hard at seeing, and Google and other search engines as well. <code>img</code> tag
+            is always self-closing tag.
+          </li>
+          <li>
+            <code>input</code> - Browser inputs. Sometimes you need to gather <code>input</code> from the user. Luckily for us, the browser is already really good at doing that. It gives us several
+            types of inputs that you can use. One of the most common ones is the text <code>input</code>, seen here: <input type="text" value="you can type in me" /> . You can also have these
+            <code>input</code> tags do numbers, dates, colors, checkboxes, radio buttons, and others. We are going to explore them now. Inputs are always self-closing tag.
+          </li>
+          <li>
+            <code>textarea</code> - Similar to an input but for a lot more text. You'd type long-form responses in here that could linebreaks in it (a linebreak happens when you hit "return" or
+            "enter" on your keyboard.) Despite never having anything inside of a <code>textarea</code>, it is not a self-closing tag. <textarea></textarea>
+          </li>
+          <li>
+            <code>select</code> and <code>option</code> — Sometimes you want to limit a user to a certain group of options to <code>select</code> from. What country you're from, what month you were
+            born in, etc. A <code>select</code> is a user-interactive input that a user can <code>select</code> an option from a dropdown menu. An <code>option</code> is one of the available options.
+            Each <code>option</code> needs a value that will be sent back to the server if the user selects that <code>option</code>. What's inside of the option is what is shown to the user.
+          </li>
+          <li>
+            <code>form</code> - A group of HTML tags related to gathering data from a user. This will be some combination of input, textarea, and select tags. You can then use this
+            <code>form</code> element to send that data to your server. A <code>form</code> tag itself doesn't show anything; it's just a container for the other tags. Let's practice them right away.
+          </li>
+          <li>
+            <code>table</code>, <code>tr</code>, and <code>td</code> - Like making a <code>table</code> in Word or Excel. If you have a <code>table</code> of data, this is the best way to display it.
+            Just for your context, we used to do terrible, awful things with tables to make websites, way back when. Because of that, some tutorials will tell you never ever use tables. That's not
+            good either because when you have tabular data (something you would put into Excel) then tables are very useful. The <code>table</code> is the container for the whole <code>table</code>,
+            <code>tr</code> represents a row, and <code>td</code> represents one cell in the <code>table</code>.
+          </li>
+          <li><code>marquee</code></li>
+          <li>There are many more tags. This is just a highlight of some of the more useful, common ones.</li>
+        </ul>
+
+        <h2>Comments</h2>
+        <p>
+          We, as coders, forget what things do. We write things that are really complicated or we know will be difficult to figure out later. Something to keep in mind is that you are mostly writing
+          code for yourself to read later, not for the computer. The hardest part of writing code is having to maintain it later, not writing it the first time. Writing code the first time is the
+          easier part. Going back and trying to remember what the hell you were thinking is the hard part.
+        </p>
+        <p>
+          This is where comments can be useful. You can leave little notes in your code that the computer won't read, it'll just ignore them. Comments... <br />
+          so that later you can come back to your code and remember what you were doing. Be careful of going overboard because putting comments everywhere like <code>h1</code> would not be wise
+          because it's pretty obvious that's the title. It's best to have code that describes itself and doesn't need comments; however, when that falls apart comments can help.
+        </p>
+
+        <div class="links d-flex align-items-center justify-content-between">
+          <a href="https://munirmahmud.github.io/introduction-to-web-design/tools.html">Environment Setup</a>
+          <a href="https://munirmahmud.github.io/introduction-to-web-design/basic-html.html">Use Attributes in HTML Tag</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
