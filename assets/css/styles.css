@@ -27,7 +27,7 @@ body {
 
 .content-wrapper {
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 2rem;
 }
@@ -61,6 +61,10 @@ code h6 {
   font-size: 100%;
   display: inline-block;
 }
+code xmp {
+  display: inline-block;
+}
+
 ul li {
   margin-bottom: 1rem;
 }
@@ -72,4 +76,8 @@ ul li p {
 }
 .ul-example li {
   margin-bottom: auto;
+}
+
+.code-para {
+  line-height: 0.2;
 }
