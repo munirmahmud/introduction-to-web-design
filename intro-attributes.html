@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Introduction to Web Design & Development - Rexacademy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3><a href="https://munirmahmud.github.io/introduction-to-web-design/">Introduction to Web Design & Development</a></h3>
+          </div>
+          <div class="col-md-6 instructor"><h5>Conducted By: Munir Mahmud</h5></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container content-wrapper">
+      <div class="row">
+        <h2>Let's talk about Attributes</h2>
+        <p>We just finished talking about what the basic building block of HTML is: tags. We're going to explore a bit more about what you can do with tags and then we'll move on to CSS.</p>
+
+        <h2>Attributes</h2>
+        <p>
+          Let's start with a text <code>input</code> tag. There are several types of <code>input</code>s that we discussed in the previous section: text, color, checkboxes, radio buttons, etc. How can
+          the browser tell which is meant to be what? HTML attributes! Attributes are additional pieces of information that you can attach to HTML tags. We're going to use the
+          <code>type</code> attribute to pass that to the browser.
+        </p>
+        <p>
+          <code>type</code> is considered an attribute. Different tags have different attributes that they care about. For example, the <code>type</code> attribute is not useful with
+          <code>type</code>, <code>div</code>, <code>h1</code>, etc. You can still put a <code>type</code> attribute on these tags; they'll just ignore them.
+        </p>
+        <p>Let's explore the other <code>input</code> types</p>
+        <p>
+          <code>input</code>s aren't the only ones to use attributes. In fact they are used everywhere in HTML. This is just to demonstrate to you what they look like and how certain attributes do
+          certain things. If something isn't working for you, always check to see if you misspelled one of the tag names or attributes; that's an easy thing to mess up and hard to tell it happened.
+        </p>
+
+        <h2>Classes</h2>
+        <p>
+          Classes are special attributes that can go on any tag, though some you won't use it with. While a class does nothing itself, it allows that tag to be found by your CSS and your JavaScript.
+          Using our house analogy, you don't want to make a rule that says "all walls are south facing.
+        </p>
+        <p>
+          It's nonsensical and you could never build a house that way. Instead, you'd make a rule that says "walls marked south-facing-wall are south facing." This is what classes allow you to do:
+          they allow you to mark your HTML so you can write rules and code to govern them later. Let's see what that looks like.
+        </p>
+
+        <code>
+          <xmp>
+            <div class="header">
+              <h1 class="header-title">My Great Blog</h1>
+            </div>
+            <div class="blog-posts">
+              <div class="post">
+                <h1 class="post-title">When Not to Overextend House Metaphors</h1>
+                <p class="post-text"> … </p>
+              </div>
+              <div class="post">
+                <h1 class="post-title">Another Great Blog Post</h1>
+                <p class="post-text"> … </p>
+              </div>
+            </div>
+          </xmp>
+        </code>
+        <p>
+          What you see above is very typical-looking HTML. Most tags will have classes. Now when I go to write CSS later, I can target just <code>post-title</code>s. If I wrote a rule targeting
+          <code>h1</code>s, I'd get all the <code>post-title</code>s and the <code>header-title</code> as well. As you may imagine, you'll want the site header's <code>h1</code> to look and act
+          different than the blog post title, just like the headers in this lesson look different than the "Introduction to Web Design & Development" in the header.
+        </p>
+
+        <h2>IDs</h2>
+        <p>
+          IDs are far less useful than classes. Whereas you'll be using classes everywhere and frequently, you should be using IDs very sparingly. As you see in our above blog-posts HTML, we can
+          re-use classes like post and post-title. This is extremely important. As a coder, you want a piece of code and use it a lot. As coders, we want to write as little code as possible (which
+          we'll explore why later, for now trust me.) For now, be satisfied that I get to write a little bit of code that governs post and have it affect every post on the page.
+        </p>
+
+        <div class="links d-flex align-items-center justify-content-between">
+          <a href="/introduction-to-web-design/introduction.html">Introduction to the Course</a>
+          <a href="/introduction-to-web-design/basic-html.html">Basic HTML</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
