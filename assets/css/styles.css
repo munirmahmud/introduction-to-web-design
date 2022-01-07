@@ -30,6 +30,7 @@ body {
   padding: 1.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 2rem;
+  border-radius: 5px;
 }
 .instructor {
   height: 100%;
