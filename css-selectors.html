@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Introduction to Web Design & Development - Rexacademy</title>
+
+    <script>
+      const posts = [
+        { title: "I love JS", author: "Munir Mahmud", id: 1 },
+        { title: "I love PHP", author: "Labonno Mahmud", id: 2 },
+        { title: "I love Python", author: "Aayan Mahmud", id: 3 },
+      ];
+      const authors = [
+        { name: "Munir Mahmud", twitter: "@munir", bio: "Learner" },
+        { name: "Labonno Mahmud", twitter: "@labonno", bio: "love it" },
+        { name: "Aayan Mahmud", twitter: "@aayan", bio: "Very Good" },
+      ];
+
+      // const takeOrder = (customer, callback) => {
+      //   console.log(`Take order for ${customer}`);
+      //   callback(customer);
+      // };
+
+      // const processOrder = (customer, callback) => {
+      //   console.log(`Processing order for ${customer}`);
+
+      //   // var currentTime = new Date().getTime();
+      //   // while (currentTime + 3000 >= new Date().getTime());
+      //   setTimeout(() => {
+      //     console.log(`Cooking completed`);
+      //     console.log(`Order processed for ${customer}`);
+      //     callback(customer);
+      //   }, 3000);
+      // };
+
+      // const completeOrder = (customer) => {
+      //   console.log(`Completed order for ${customer}`);
+      // };
+
+      // takeOrder("Customer 1", (customer) => {
+      //   processOrder(customer, (customer) => {
+      //     completeOrder(customer);
+      //   });
+      // });
+
+      const hasMeeting = false;
+      const meeting = new Promise((resolve, reject) => {
+        if (!hasMeeting) {
+          const meetingDetails = {
+            name: "Technical Meeting",
+            localtion: "Google Meet",
+            time: "10:00 PM",
+          };
+
+          resolve(meetingDetails);
+        } else {
+          reject(new Error("Meeting already scheduled"));
+        }
+      });
+
+      const addToCalender = (meetingDetails) => {
+        const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.localtion} at ${meetingDetails.time}`;
+        return Promise.resolve(calender);
+      };
+
+      meeting
+        .then(addToCalender)
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3><a href="https://munirmahmud.github.io/introduction-to-web-design/">Introduction to Web Design & Development</a></h3>
+          </div>
+          <div class="col-md-6 instructor"><h5>Conducted By: Munir Mahmud</h5></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="content-wrapper">
+            <h2>CSS Selectors</h2>
+            <p>
+              Before this section, you learned how to make CSS rules to affect how your webpage looks. We showed you how to make a CSS rule so that you can make every <code>p</code> on the page have
+              green text instead of black which is amazing. However, as you start building bigger websites, you begin to have more complicated needs: you may need this <code>p</code> to have green
+              text and that <code>p</code> to have <q>red</q>
+              text. We haven't shown you yet how to make two of the same tag be styled different. Let's start showing you how to do this so you can achieve things like this:
+            </p>
+
+            <code>
+              <xmp><h1>This is an h1 tag.</h1></xmp>
+            </code>
+
+            <div class="links d-flex align-items-center justify-content-between">
+              <!-- <a href="/introduction-to-web-design/meta-tags.html">Meta Tags in HTML</a>
+              <a href="/introduction-to-web-design/tools.html">Tools to Use</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
